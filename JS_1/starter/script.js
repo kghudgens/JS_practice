@@ -114,21 +114,40 @@
 
 // console.log(century)
 
-const markWeight = 78 
-const markHeight = 1.69 
+// const markWeight = 78 
+// const markHeight = 1.69 
 
-const johnWeight = 92
-const johnHeight = 1.95
+// const johnWeight = 92
+// const johnHeight = 1.95
 
-const johnBMI = johnWeight/ johnHeight ** 2
-const markBMI = markWeight/ markHeight ** 2
+// const johnBMI = johnWeight/ johnHeight ** 2
+// const markBMI = markWeight/ markHeight ** 2
 
-const markHigherBMI = markBMI > johnBMI
-console.log(markHigherBMI)
+// const markHigherBMI = markBMI > johnBMI
+// console.log(markHigherBMI)
 
 
-if (johnBMI > markBMI){
-    console.log("Johns bmi is greater than marks")
-} else{
-    console.log("Marks bmi is greater than marks")
-}
+// if (johnBMI > markBMI){
+//     console.log("Johns bmi is greater than marks")
+// } else{
+//     console.log("Marks bmi is greater than marks")
+// }
+
+// type conversion
+// const inputYear = '1991';
+// const newInputYear = Number(inputYear)
+
+
+// console.log(newInputYear + 18)
+// console.log(newInputYear)
+
+// // type coercion
+// console.log('I am ' + 23 + ' years old')
+// console.log('23' - '10' - 3)
+
+// Truthy and falsy
+// console.log(Boolean(0))
+// console.log(Boolean(undefined))
+// console.log(Boolean(''))
+// console.log(Boolean(null))
+// console.log(Boolean(NaN))

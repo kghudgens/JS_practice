@@ -173,3 +173,27 @@
 // } else if(fav == 3){
 //     console.log("ha")
 // }
+
+// const hasDriversLicense = true;
+// const hasGoodVision = false;
+
+// console.log(hasDriversLicense && hasGoodVision)
+// console.log(hasDriversLicense || hasGoodVision)
+// console.log(!hasGoodVision)
+
+// const shouldDrive = hasDriversLicense && hasGoodVision
+
+// // if (shouldDrive){
+// //     console.log("Sarah can drive")
+// // } else{
+// //     console.log("Someone else should drive")
+// // }
+
+// const isTired = true 
+// console.log(hasDriversLicense && hasGoodVision && isTired)
+
+// if (hasDriversLicense && hasGoodVision && !isTired){
+//     console.log("Sarah can drive")
+// }else{
+//     console.log("driving is crazy")
+// }

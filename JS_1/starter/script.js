@@ -151,3 +151,25 @@
 // console.log(Boolean(''))
 // console.log(Boolean(null))
 // console.log(Boolean(NaN))
+
+// const money = 0
+// if (money){
+//     console.log("Dont spend it all")
+// } else{
+//     console.log("You should get a job")
+// }
+
+// let height;
+// if (height){
+//     console.log("Yay height is defined")
+// } else{
+//     console.log("Height is undefined")
+// }
+
+// const fav = prompt("Wahts that number")
+
+// if (fav == 10){
+//     console.log("Ja")
+// } else if(fav == 3){
+//     console.log("ha")
+// }

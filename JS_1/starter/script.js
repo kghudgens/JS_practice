@@ -266,11 +266,12 @@
 
 // coding challenge
 
-const lowTip = .15
-const highTip = .20
-const mealCost = 430
+// const lowTip = .15
+// const highTip = .20
+// const mealCost = 430
 
-const tip = mealCost >= 50 && mealCost <= 300 ? mealCost * lowTip : mealCost * highTip
-const total = tip + mealCost
+// const tip = mealCost >= 50 && mealCost <= 300 ? mealCost * lowTip : mealCost * highTip
+// const total = tip + mealCost
 
-console.log(`The meal cost was ${mealCost},the tip was ${tip} the total was ${total}` )
+// console.log(`The meal cost was ${mealCost},the tip was ${tip} the total was ${total}` )
+

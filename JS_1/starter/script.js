@@ -197,3 +197,23 @@
 // }else{
 //     console.log("driving is crazy")
 // }
+
+
+const dolphinsAverage = (96 + 108 + 89) / 3
+const koalasAverage = (88 + 91 + 110) / 3 
+const minScore = 100
+
+console.log(dolphinsAverage)
+console.log(koalasAverage)
+
+if (dolphinsAverage > koalasAverage && dolphinsAverage >= minScore){
+    console.log('Dolphins win with the score of ' + String(dolphinsAverage))
+} else if (koalasAverage > dolphinsAverage && koalasAverage >= minScore){
+    console.log(`Koalas win with the score of ${koalasAverage}`)
+} else if (koalasAverage && dolphinsAverage <= minScore){
+    console.log("Both Scores are too low")
+} else if (koalasAverage === dolphinsAverage){
+    console.log("Its a draw")
+}else{
+    console.log()
+}

@@ -55,3 +55,19 @@
 // }
 
 // console.log(yearsUntilRetirement(1991, 'David'))
+
+function cutFruitPieces(fruit){
+    return fruit * 4
+}
+
+
+function fruitProcessor(apples, oranges){
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `Juice with ${applePieces} piece of apples and ${orangePieces} pieces of oranges`;
+    return juice 
+}
+
+const juiceContents = fruitProcessor(7, 9)
+console.log(juiceContents)

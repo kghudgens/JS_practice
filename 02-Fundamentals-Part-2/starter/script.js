@@ -93,19 +93,45 @@
 // console.log(yearsUntilRetirement(1995, 'kevin'))
 // console.log(yearsUntilRetirement(1940, 'Sandra'))
 
-const calcAverage = (score1, score2, score3 ) => (score1 + score2 + score3) / 3
+// const calcAverage = (score1, score2, score3 ) => (score1 + score2 + score3) / 3
 
-const dolphinsAverage = calcAverage(85, 54, 41)
-const koalasAverage = calcAverage(65, 54, 49)
+// const dolphinsAverage = calcAverage(85, 54, 41)
+// const koalasAverage = calcAverage(65, 54, 49)
 
-function checkWinner(avgKoalas, avgDolphins){
-    if (avgDolphins > avgKoalas){
-        console.log(`The Score was ${avgDolphins} and ${avgKoalas}, the dolphins win`)
-        return avgDolphins
-    } else{
-        console.log(`The Score was ${avgDolphins} and ${avgKoalas}, the Koalas win`)
-        return avgKoalas
-    }
+// function checkWinner(avgKoalas, avgDolphins){
+//     if (avgDolphins > avgKoalas){
+//         console.log(`The Score was ${avgDolphins} and ${avgKoalas}, the dolphins win`)
+//         return avgDolphins
+//     } else{
+//         console.log(`The Score was ${avgDolphins} and ${avgKoalas}, the Koalas win`)
+//         return avgKoalas
+//     }
+// }
+
+// checkWinner(koalasAverage, dolphinsAverage)
+
+const friends = ['Michael', "Steven", "Peter"]
+
+// const years = new Array(1991, 1984, 2008, 2020)
+
+console.log(friends[0])
+
+console.log(friends.length)
+console.log(friends[friends.length - 1])
+
+friends[2] = 'Momo'
+
+console.log(friends)
+
+const kevin = ['Kevin', 'Hudgens', 2020-1995, friends]
+console.log(kevin)
+
+const calcAGE = function(birthYear){
+    return 2020 - birthYear
 }
 
-checkWinner(koalasAverage, dolphinsAverage)
+const years = [1990, 1967, 2002, 2010, 2018]
+
+console.log(calcAGE(years[0]), calcAGE(years[1]), calcAGE(years[3]))
+const ages = [calcAGE(years[0]), calcAGE(years[2]), calcAGE(years[3])]
+console.log(ages)

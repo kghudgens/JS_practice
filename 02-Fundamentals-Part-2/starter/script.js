@@ -92,3 +92,20 @@
 
 // console.log(yearsUntilRetirement(1995, 'kevin'))
 // console.log(yearsUntilRetirement(1940, 'Sandra'))
+
+const calcAverage = (score1, score2, score3 ) => (score1 + score2 + score3) / 3
+
+const dolphinsAverage = calcAverage(85, 54, 41)
+const koalasAverage = calcAverage(65, 54, 49)
+
+function checkWinner(avgKoalas, avgDolphins){
+    if (avgDolphins > avgKoalas){
+        console.log(`The Score was ${avgDolphins} and ${avgKoalas}, the dolphins win`)
+        return avgDolphins
+    } else{
+        console.log(`The Score was ${avgDolphins} and ${avgKoalas}, the Koalas win`)
+        return avgKoalas
+    }
+}
+
+checkWinner(koalasAverage, dolphinsAverage)

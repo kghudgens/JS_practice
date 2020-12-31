@@ -184,3 +184,32 @@
 //     console.log(`The bill was ${x} so the final bill with tip is ${calcTip(x)}`)
 // }
 
+
+const kevin = {
+    firstName:"Kevin",
+    lastName: "Hudgens",
+    age: 2020-1995,
+    job: "SWE",
+    friends: ["Michael", "Peter", "Steven"]
+}
+console.log(kevin)
+console.log(kevin.firstName)
+console.log(kevin['lastName'])
+
+// const interestedIn = prompt("What do you want to know about Kevin? Choose between firstName, lastName or age")
+
+// console.log(kevin[interestedIn])
+
+// if(kevin[interestedIn]){
+//     console.log(kevin[interestedIn])
+// }else{
+//     console.log("Wrong request! Try again")
+// }
+
+kevin.location = "Japan"
+kevin['twitter'] = '@kgh2727'
+console.log(kevin)
+
+
+console.log(kevin.friends)
+console.log(kevin.friends[0])

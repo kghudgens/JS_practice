@@ -110,28 +110,56 @@
 
 // checkWinner(koalasAverage, dolphinsAverage)
 
+// const friends = ['Michael', "Steven", "Peter"]
+
+// // const years = new Array(1991, 1984, 2008, 2020)
+
+// console.log(friends[0])
+
+// console.log(friends.length)
+// console.log(friends[friends.length - 1])
+
+// friends[2] = 'Momo'
+
+// console.log(friends)
+
+// const kevin = ['Kevin', 'Hudgens', 2020-1995, friends]
+// console.log(kevin)
+
+// const calcAGE = function(birthYear){
+//     return 2020 - birthYear
+// }
+
+// const years = [1990, 1967, 2002, 2010, 2018]
+
+// console.log(calcAGE(years[0]), calcAGE(years[1]), calcAGE(years[3]))
+// const ages = [calcAGE(years[0]), calcAGE(years[2]), calcAGE(years[3])]
+// console.log(ages)
+
 const friends = ['Michael', "Steven", "Peter"]
+const newLength = friends.push("Jay", "Stevie")
+console.log(friends)
+console.log(newLength)
 
-// const years = new Array(1991, 1984, 2008, 2020)
-
-console.log(friends[0])
-
-console.log(friends.length)
-console.log(friends[friends.length - 1])
-
-friends[2] = 'Momo'
-
+// adds to front of array 
+friends.unshift("John")
 console.log(friends)
 
-const kevin = ['Kevin', 'Hudgens', 2020-1995, friends]
-console.log(kevin)
+// sorts list 
+console.log(friends.sort())
 
-const calcAGE = function(birthYear){
-    return 2020 - birthYear
+// Finds Position
+console.log(friends.indexOf("Steven"))
+console.log(friends.indexOf("Bob"))
+
+// If actually in array 
+console.log(friends.includes("BOB"))
+console.log(friends.includes("Steven"))
+
+if (friends.includes("Steven") && friends.includes("Bob")){
+    console.log("I know your friends")
+}else{
+    friends.unshift("Bob")
+    console.log(friends)
+    console.log("Now Bob is your friend")
 }
-
-const years = [1990, 1967, 2002, 2010, 2018]
-
-console.log(calcAGE(years[0]), calcAGE(years[1]), calcAGE(years[3]))
-const ages = [calcAGE(years[0]), calcAGE(years[2]), calcAGE(years[3])]
-console.log(ages)

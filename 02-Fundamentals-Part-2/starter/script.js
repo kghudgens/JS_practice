@@ -136,30 +136,51 @@
 // const ages = [calcAGE(years[0]), calcAGE(years[2]), calcAGE(years[3])]
 // console.log(ages)
 
-const friends = ['Michael', "Steven", "Peter"]
-const newLength = friends.push("Jay", "Stevie")
-console.log(friends)
-console.log(newLength)
+// const friends = ['Michael', "Steven", "Peter"]
+// const newLength = friends.push("Jay", "Stevie")
+// console.log(friends)
+// console.log(newLength)
 
-// adds to front of array 
-friends.unshift("John")
-console.log(friends)
+// // adds to front of array 
+// friends.unshift("John")
+// console.log(friends)
 
-// sorts list 
-console.log(friends.sort())
+// // sorts list 
+// console.log(friends.sort())
 
-// Finds Position
-console.log(friends.indexOf("Steven"))
-console.log(friends.indexOf("Bob"))
+// // Finds Position
+// console.log(friends.indexOf("Steven"))
+// console.log(friends.indexOf("Bob"))
 
-// If actually in array 
-console.log(friends.includes("BOB"))
-console.log(friends.includes("Steven"))
+// // If actually in array 
+// console.log(friends.includes("BOB"))
+// console.log(friends.includes("Steven"))
 
-if (friends.includes("Steven") && friends.includes("Bob")){
-    console.log("I know your friends")
-}else{
-    friends.unshift("Bob")
-    console.log(friends)
-    console.log("Now Bob is your friend")
-}
+// if (friends.includes("Steven") && friends.includes("Bob")){
+//     console.log("I know your friends")
+// }else{
+//     friends.unshift("Bob")
+//     console.log(friends)
+//     console.log("Now Bob is your friend")
+// }
+
+// function calcTip(bill){
+//     if (bill >300){
+//         const billTotal = (bill * .2) + bill
+//         return billTotal
+//     } else if (bill >= 50 && bill<= 300){
+//         const billTotal = (bill * .15) + bill
+//         return billTotal
+//     }else{
+//         return `No tip`
+//     }
+// }
+
+// const bills = [125, 555 , 44]
+
+// let x = ''
+
+// for (x of bills){
+//     console.log(`The bill was ${x} so the final bill with tip is ${calcTip(x)}`)
+// }
+

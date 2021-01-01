@@ -214,33 +214,64 @@
 // console.log(kevin.friends)
 // console.log(kevin.friends[0])
 
-const kevin = {
-    firstName:"Kevin",
-    lastName: "Hudgens",
-    birthYear: 1995,
-    job: "SWE",
-    friends: ["Michael", "Peter", "Steven"],
-    hasDriversLicense: false,
+// const kevin = {
+//     firstName:"Kevin",
+//     lastName: "Hudgens",
+//     birthYear: 1995,
+//     job: "SWE",
+//     friends: ["Michael", "Peter", "Steven"],
+//     hasDriversLicense: false,
 
-    // calcAge :function(birthYear){
-    //     return 2037 -birthYear
-    // }
-    // calcAGE: function(){
-    //     return 2037- this.age 
-    // }
-    calcAGE: function(){
-        this.age = 2020 - this.birthYear;
-        return this.age
-    },
+//     // calcAge :function(birthYear){
+//     //     return 2037 -birthYear
+//     // }
+//     // calcAGE: function(){
+//     //     return 2037- this.age 
+//     // }
+//     calcAGE: function(){
+//         this.age = 2020 - this.birthYear;
+//         return this.age
+//     },
 
-    getSummary: function(){
-        if (this.hasDriversLicense){
-            return `${this.firstName} is a ${this.age}-year old ${this.job} and he has a drivers license. `
-        } else{
-            return `${this.firstName} is a ${this.age}-year old ${this.job} and he doesnt have a drivers license. `
-        }
+//     getSummary: function(){
+//         if (this.hasDriversLicense){
+//             return `${this.firstName} is a ${this.age}-year old ${this.job} and he has a drivers license. `
+//         } else{
+//             return `${this.firstName} is a ${this.age}-year old ${this.job} and he doesnt have a drivers license. `
+//         }
+//     }
+// }
+// console.log(kevin.calcAGE())
+// console.log(kevin.getSummary())
+
+
+const mark = {
+    fullName: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+
+    calcBMI: function(){
+        return this.mass / (this.height ** 2)
     }
 }
-console.log(kevin.calcAGE())
-console.log(kevin.getSummary())
 
+const john = {
+    fullName: "John Smith",
+    mass: 92,
+    height: 1.95,
+
+    calcBMI: function(){
+        return this.mass / (this.height ** 2)
+    }
+}
+
+function result(){
+    if (john.calcBMI() > mark.calcBMI()){
+        console.log(`John's BMI (${john.calcBMI()}) is higher than Mark's (${mark.calcBMI()}).`)
+    } else{
+        console.log(`John's BMI (${john.calcBMI()}) is lower than Mark's (${mark.calcBMI()}).`)
+    }
+
+}
+
+result()

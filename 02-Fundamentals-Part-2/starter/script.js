@@ -185,31 +185,62 @@
 // }
 
 
+// const kevin = {
+//     firstName:"Kevin",
+//     lastName: "Hudgens",
+//     age: 2020-1995,
+//     job: "SWE",
+//     friends: ["Michael", "Peter", "Steven"]
+// }
+// console.log(kevin)
+// console.log(kevin.firstName)
+// console.log(kevin['lastName'])
+
+// // const interestedIn = prompt("What do you want to know about Kevin? Choose between firstName, lastName or age")
+
+// // console.log(kevin[interestedIn])
+
+// // if(kevin[interestedIn]){
+// //     console.log(kevin[interestedIn])
+// // }else{
+// //     console.log("Wrong request! Try again")
+// // }
+
+// kevin.location = "Japan"
+// kevin['twitter'] = '@kgh2727'
+// console.log(kevin)
+
+
+// console.log(kevin.friends)
+// console.log(kevin.friends[0])
+
 const kevin = {
     firstName:"Kevin",
     lastName: "Hudgens",
-    age: 2020-1995,
+    birthYear: 1995,
     job: "SWE",
-    friends: ["Michael", "Peter", "Steven"]
+    friends: ["Michael", "Peter", "Steven"],
+    hasDriversLicense: false,
+
+    // calcAge :function(birthYear){
+    //     return 2037 -birthYear
+    // }
+    // calcAGE: function(){
+    //     return 2037- this.age 
+    // }
+    calcAGE: function(){
+        this.age = 2020 - this.birthYear;
+        return this.age
+    },
+
+    getSummary: function(){
+        if (this.hasDriversLicense){
+            return `${this.firstName} is a ${this.age}-year old ${this.job} and he has a drivers license. `
+        } else{
+            return `${this.firstName} is a ${this.age}-year old ${this.job} and he doesnt have a drivers license. `
+        }
+    }
 }
-console.log(kevin)
-console.log(kevin.firstName)
-console.log(kevin['lastName'])
+console.log(kevin.calcAGE())
+console.log(kevin.getSummary())
 
-// const interestedIn = prompt("What do you want to know about Kevin? Choose between firstName, lastName or age")
-
-// console.log(kevin[interestedIn])
-
-// if(kevin[interestedIn]){
-//     console.log(kevin[interestedIn])
-// }else{
-//     console.log("Wrong request! Try again")
-// }
-
-kevin.location = "Japan"
-kevin['twitter'] = '@kgh2727'
-console.log(kevin)
-
-
-console.log(kevin.friends)
-console.log(kevin.friends[0])

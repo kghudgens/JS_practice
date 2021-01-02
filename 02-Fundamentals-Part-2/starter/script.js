@@ -344,17 +344,68 @@ const types = []
 //         console.log(`Lifting weights repetition ${rep}`)
 // }
 
-let rep = 1
-while(rep<= 10){
-    console.log(`Lifting weights repetition ${rep}`)
-    rep++
+// let rep = 1
+// while(rep<= 10){
+//     console.log(`Lifting weights repetition ${rep}`)
+//     rep++
+// }
+
+// let dice = ''
+// console.log(dice)
+
+// while(dice !== 6){
+//     console.log(`You rolled a ${dice}`)
+//     dice = Math.trunc(Math.random() * 6) + 1
+//     if (dice === 6)console.log("Loop is about to end")
+// }
+
+const bills = [22, 295, 176, 440, 37, 105, 10 , 110, 86, 52]
+const tips = []
+const totals = []
+
+function getTip(bill){
+    if (bill >300){
+        return (bill * .2) 
+    } else if (bill >= 50 && bill<= 300){
+        return (bill * .15)
+    }else{
+        return `No tip`
+    }  
 }
 
-let dice = ''
-console.log(dice)
-
-while(dice !== 6){
-    console.log(`You rolled a ${dice}`)
-    dice = Math.trunc(Math.random() * 6) + 1
-    if (dice === 6)console.log("Loop is about to end")
+function calcTip(bill){
+    if (bill >300){
+        const billTotal = (bill * .2) + bill
+        return billTotal
+    } else if (bill >= 50 && bill<= 300){
+        const billTotal = (bill * .15) + bill
+        return billTotal
+    }else{
+        const billTotal = (bill * .10)
+        return billTotal
+    }
 }
+
+for( let  i = 0; i <= bills.length -1; i++){
+    const calcTotal = calcTip(bills[i])
+    totals.push(calcTotal)
+
+    const calcOnlyTip = getTip(bills[i])
+    tips.push(calcOnlyTip)
+}
+
+console.log(totals)
+console.log(tips)
+
+let sum = 0
+
+function calcAverage(x){
+    for(let i = 0; i <= totals.length - 1; i ++){
+        sum = x[i] + sum
+        console.log(sum)
+    }
+    return sum / x.length -1
+}
+
+const answer = calcAverage(totals)
+console.log(answer)

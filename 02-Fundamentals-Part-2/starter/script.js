@@ -245,33 +245,83 @@
 // console.log(kevin.getSummary())
 
 
-const mark = {
-    fullName: "Mark Miller",
-    mass: 78,
-    height: 1.69,
+// const mark = {
+//     fullName: "Mark Miller",
+//     mass: 78,
+//     height: 1.69,
 
-    calcBMI: function(){
-        return this.mass / (this.height ** 2)
-    }
-}
+//     calcBMI: function(){
+//         return this.mass / (this.height ** 2)
+//     }
+// }
 
-const john = {
-    fullName: "John Smith",
-    mass: 92,
-    height: 1.95,
+// const john = {
+//     fullName: "John Smith",
+//     mass: 92,
+//     height: 1.95,
 
-    calcBMI: function(){
-        return this.mass / (this.height ** 2)
-    }
-}
+//     calcBMI: function(){
+//         return this.mass / (this.height ** 2)
+//     }
+// }
 
-function result(){
-    if (john.calcBMI() > mark.calcBMI()){
-        console.log(`John's BMI (${john.calcBMI()}) is higher than Mark's (${mark.calcBMI()}).`)
-    } else{
-        console.log(`John's BMI (${john.calcBMI()}) is lower than Mark's (${mark.calcBMI()}).`)
-    }
+// function result(){
+//     if (john.calcBMI() > mark.calcBMI()){
+//         console.log(`John's BMI (${john.calcBMI()}) is higher than Mark's (${mark.calcBMI()}).`)
+//     } else{
+//         console.log(`John's BMI (${john.calcBMI()}) is lower than Mark's (${mark.calcBMI()}).`)
+//     }
 
-}
+// }
 
-result()
+// result()
+
+// console.log("Lifting weights repetition 1")
+
+// for(let rep = 1; rep <= 10 ;rep++){
+//     if (rep %2 == 0){
+//         console.log(`Lifting weights repetition ${rep}`)
+//     }
+// }
+
+const kevin = [
+    "Kevin",
+    "Hudgens",
+    1995,
+    "SWE",
+    ["Michael", "Peter", "Steven"]
+]
+
+const types = []
+
+
+// for (let i =0; i <kevin.length; i ++){
+//     console.log(kevin[i], typeof kevin[i])
+    
+//     // Filling an array
+//     // types[i] = typeof kevin[i]
+
+//     types.push(typeof kevin[i])
+// }
+// console.log(types)
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = []
+
+// for(let i=0; i<years.length; i ++){
+//     ages.push(2037 - years[i])
+// }
+// console.log(ages)
+
+// continue and break
+// for(let i=0; i<kevin.length; i ++){
+//     if(typeof kevin[i] !== 'string') continue;
+
+//     console.log(kevin[i], typeof kevin[i])
+// }
+
+// for(let i=0; i<kevin.length; i ++){
+//     if(typeof kevin[i] ==='number') break;
+
+//     console.log(kevin[i], typeof kevin[i])
+// }

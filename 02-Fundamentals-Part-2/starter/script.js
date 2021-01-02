@@ -284,14 +284,6 @@
 //     }
 // }
 
-const kevin = [
-    "Kevin",
-    "Hudgens",
-    1995,
-    "SWE",
-    ["Michael", "Peter", "Steven"]
-]
-
 const types = []
 
 
@@ -325,3 +317,24 @@ const types = []
 
 //     console.log(kevin[i], typeof kevin[i])
 // }
+
+
+const kevin = [
+    "Kevin",
+    "Hudgens",
+    1995,
+    "SWE",
+    ["Michael", "Peter", "Steven"]
+]
+
+for(let i = kevin.length - 1; i >= 0; i -- ){
+    console.log(kevin[i], i)
+}
+
+for (let exercise = 1; exercise<=3; exercise ++){
+    console.log(`--------- Starting exercise ${exercise}`)
+
+    for(let rep = 1; rep <6; rep ++){
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`)
+    }
+}

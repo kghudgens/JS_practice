@@ -31,22 +31,62 @@
 // console.log(job);
 // console.log(year);
 
-console.log(addDecl(2, 3));
+// console.log(addDecl(2, 3));
 
-var me = 'Jonas';
-let job = 'teacher';
-const year = 1991;
+// var me = 'Jonas';
+// let job = 'teacher';
+// const year = 1991;
 
-function addDecl(a, b) {
-    return a + b;
-}
+// function addDecl(a, b) {
+//     return a + b;
 
-let addArrow = (a, b) => a + b;
+// }
 
-let numProducts = 10;
+// let addArrow = (a, b) => a + b;
 
-if (!numProducts) deleteShoppingCart;
+// let numProducts = 10;
 
-function deleteShoppingCart() {
-    console.log('All products deleted.');
-}
+// if (!numProducts) deleteShoppingCart;
+
+// function deleteShoppingCart() {
+//     console.log('All products deleted.');
+// }
+
+// var x = 1;
+// let y = 2;
+// const z = 3;
+
+// console.log(x === window.x);
+
+// See how the this keyword works
+// console.log(this);
+
+// const calcAge = function (birthYear) {
+//     console.log(2037 - birthYear);
+//     console.log(this);
+// };
+
+// calcAge(1991);
+
+// const calcAgeArrow = birthYear => {
+//     console.log(2037 - birthYear);
+//     console.log(this);
+// };
+
+// calcAgeArrow(1980);
+
+const jonas = {
+    name: 'kevin',
+    year: 1991,
+    calcAge: function () {
+        console.log(2021 - this.year);
+    },
+};
+jonas.calcAge();
+
+const matilda = {
+    year: 2017,
+};
+
+matilda.calcAge = jonas.calcAge();
+matilda.calcAge;

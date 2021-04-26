@@ -27,9 +27,9 @@
 // const firstName = 'Kevin';
 // console.log(calcAge(1995));
 
-console.log(Jonas);
-console.log(job);
-console.log(year);
+// console.log(Jonas);
+// console.log(job);
+// console.log(year);
 
 console.log(addDecl(2, 3));
 
@@ -39,4 +39,14 @@ const year = 1991;
 
 function addDecl(a, b) {
     return a + b;
+}
+
+let addArrow = (a, b) => a + b;
+
+let numProducts = 10;
+
+if (!numProducts) deleteShoppingCart;
+
+function deleteShoppingCart() {
+    console.log('All products deleted.');
 }

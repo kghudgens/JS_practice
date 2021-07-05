@@ -52,27 +52,42 @@
 // const person = new Person();
 // person.printName();
 
-const kevin = {
-  name: "Kevin",
-  race: "The best",
-};
+// const kevin = {
+//   name: "Kevin",
+//   race: "The best",
+// };
 
-const Momo = {
-  ...kevin,
-  age: 25,
-};
+// const Momo = {
+//   ...kevin,
+//   age: 25,
+// };
 
-const sum = (x, y, z) => x + y + z;
+// const sum = (x, y, z) => x + y + z;
 
-const num = [1, 3, 5];
+// const num = [1, 3, 5];
 
-console.log(sum(...num));
-const newNumbers = [...num, 4];
-console.log(newNumbers);
-console.log(Momo);
+// console.log(sum(...num));
+// const newNumbers = [...num, 4];
+// console.log(newNumbers);
+// console.log(Momo);
 
-const filter = (...args) => {
-  return args.filter((el) => el === 6);
-};
+// const filter = (...args) => {
+//   return args.filter((el) => el === 6);
+// };
 
-console.log(filter(1, 2, 3, 4, 5));
+// console.log(filter(1, 2, 3, 4, 5));
+// let num1, num2, num3;
+// const numbers = [1, 3, 5];
+// [num1, num2, num3] = numbers;
+// console.log(num1, num2, num3);
+
+const numbers = [1, 2, 3];
+
+const doubleNumArray = numbers.map((num) => {
+  return num * 2;
+});
+
+console.log(numbers);
+console.log(doubleNumArray);
+
+const forEachEx = numbers.forEach((item, index) => console.log(item, index));
